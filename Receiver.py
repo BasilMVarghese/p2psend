@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'Receiver.ui'
 #
-# Created: Thu Mar 17 01:27:07 2016
+# Created: Thu Mar 17 15:51:40 2016
 #      by: PyQt4 UI code generator 4.10.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -38,6 +38,9 @@ class Ui_MainWindow(object):
         self.SaveButton = QtGui.QPushButton(self.centralwidget)
         self.SaveButton.setGeometry(QtCore.QRect(520, 70, 181, 51))
         self.SaveButton.setObjectName(_fromUtf8("SaveButton"))
+        self.ServerStatusOnline = QtGui.QCheckBox(self.centralwidget)
+        self.ServerStatusOnline.setGeometry(QtCore.QRect(10, 130, 97, 22))
+        self.ServerStatusOnline.setObjectName(_fromUtf8("ServerStatusOnline"))
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtGui.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 733, 25))
@@ -53,4 +56,5 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow", None))
         self.SaveButton.setText(_translate("MainWindow", "Save", None))
+        self.ServerStatusOnline.setText(_translate("MainWindow", "Server Up", None))
 

@@ -47,6 +47,19 @@
      <string>Save</string>
     </property>
    </widget>
+   <widget class="QCheckBox" name="ServerStatusOnline">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>97</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Server Up</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
