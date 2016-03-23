@@ -2,5 +2,5 @@
 Work in progress    
 For viewing the current UI
 
-     python Receiver_ui_demo.py
+     python transmitter_ui_demo.py
   
