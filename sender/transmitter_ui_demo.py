@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'transmitter_UI.ui'
 #
-# Created: Thu Mar 24 21:22:52 2016
+# Created: Thu Mar 24 22:44:40 2016
 #      by: PyQt4 UI code generator 4.10.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -35,12 +35,12 @@ class Ui_MainWindow(object):
         self.verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
         self.horizontalLayout_4 = QtGui.QHBoxLayout()
         self.horizontalLayout_4.setObjectName(_fromUtf8("horizontalLayout_4"))
-        self.lineEdit = QtGui.QLineEdit(self.centralwidget)
-        self.lineEdit.setObjectName(_fromUtf8("lineEdit"))
-        self.horizontalLayout_4.addWidget(self.lineEdit)
-        self.pushButton = QtGui.QPushButton(self.centralwidget)
-        self.pushButton.setObjectName(_fromUtf8("pushButton"))
-        self.horizontalLayout_4.addWidget(self.pushButton)
+        self.UserName = QtGui.QLineEdit(self.centralwidget)
+        self.UserName.setObjectName(_fromUtf8("UserName"))
+        self.horizontalLayout_4.addWidget(self.UserName)
+        self.SetUserNameButton = QtGui.QPushButton(self.centralwidget)
+        self.SetUserNameButton.setObjectName(_fromUtf8("SetUserNameButton"))
+        self.horizontalLayout_4.addWidget(self.SetUserNameButton)
         self.verticalLayout.addLayout(self.horizontalLayout_4)
         self.horizontalLayout_3 = QtGui.QHBoxLayout()
         self.horizontalLayout_3.setObjectName(_fromUtf8("horizontalLayout_3"))
@@ -59,15 +59,15 @@ class Ui_MainWindow(object):
         self.FileName = QtGui.QLineEdit(self.centralwidget)
         self.FileName.setObjectName(_fromUtf8("FileName"))
         self.horizontalLayout.addWidget(self.FileName)
-        self.SelectFile = QtGui.QPushButton(self.centralwidget)
-        self.SelectFile.setObjectName(_fromUtf8("SelectFile"))
-        self.horizontalLayout.addWidget(self.SelectFile)
+        self.SelectFileButton = QtGui.QPushButton(self.centralwidget)
+        self.SelectFileButton.setObjectName(_fromUtf8("SelectFileButton"))
+        self.horizontalLayout.addWidget(self.SelectFileButton)
         self.verticalLayout.addLayout(self.horizontalLayout)
         self.horizontalLayout_5 = QtGui.QHBoxLayout()
         self.horizontalLayout_5.setObjectName(_fromUtf8("horizontalLayout_5"))
-        self.pushButton_2 = QtGui.QPushButton(self.centralwidget)
-        self.pushButton_2.setObjectName(_fromUtf8("pushButton_2"))
-        self.horizontalLayout_5.addWidget(self.pushButton_2)
+        self.SendButton = QtGui.QPushButton(self.centralwidget)
+        self.SendButton.setObjectName(_fromUtf8("SendButton"))
+        self.horizontalLayout_5.addWidget(self.SendButton)
         self.verticalLayout.addLayout(self.horizontalLayout_5)
         self.horizontalLayout_2 = QtGui.QHBoxLayout()
         self.horizontalLayout_2.setObjectName(_fromUtf8("horizontalLayout_2"))
@@ -83,10 +83,10 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow", None))
-        self.pushButton.setText(_translate("MainWindow", "Set User Name", None))
+        self.SetUserNameButton.setText(_translate("MainWindow", "Set User Name", None))
         self.VerfiyBuddyButton.setText(_translate("MainWindow", "Verify", None))
-        self.SelectFile.setText(_translate("MainWindow", "Select File ", None))
-        self.pushButton_2.setText(_translate("MainWindow", "Send ", None))
+        self.SelectFileButton.setText(_translate("MainWindow", "Select File ", None))
+        self.SendButton.setText(_translate("MainWindow", "Send ", None))
 
 
 if __name__ == "__main__":

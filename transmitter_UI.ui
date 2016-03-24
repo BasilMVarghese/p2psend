@@ -54,7 +54,7 @@
          <widget class="QLineEdit" name="FileName"/>
         </item>
         <item>
-         <widget class="QPushButton" name="SelectFileButton">
+         <widget class="QPushButton" name="SelectFile">
           <property name="text">
            <string>Select File </string>
           </property>
