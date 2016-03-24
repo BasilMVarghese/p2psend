@@ -1,7 +1,7 @@
 
 import sys
 from transmitter_ui_demo import *
-class  window(Ui_MainWindow):
+class  window(Ui_MainWindow):# The Ui_Main Window is a model of userinterface which is imported by above command..
 	def setupUi(self,QMainWindow):
 		self.filelist=[]	##Will contain the list of file names to send
 		self
