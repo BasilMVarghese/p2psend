@@ -23,7 +23,9 @@ class  window(Ui_MainWindow):# The Ui_Main Window is a model of userinterface wh
 		fil.write("Usename#"+str(self.UserName.text()))
 		fil.close()
 	def varifyBuddyName(self):
+		pass
 	def sendFile(self):
+		pass
 
 
 
