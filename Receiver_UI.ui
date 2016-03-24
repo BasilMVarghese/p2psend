@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>681</width>
-    <height>231</height>
+    <width>685</width>
+    <height>299</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,10 +20,17 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_4">
         <item>
-         <widget class="QLineEdit" name="lineEdit"/>
+         <widget class="QLabel" name="UserIp">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton">
+         <widget class="QLineEdit" name="UserName"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="SetUserNameButton">
           <property name="text">
            <string>Set User Name</string>
           </property>
@@ -34,40 +41,16 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_3">
         <item>
-         <widget class="QLineEdit" name="BuddyIp"/>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="BuddyName"/>
-        </item>
-        <item>
-         <widget class="QPushButton" name="VerfiyBuddyButton">
+         <widget class="QRadioButton" name="ServerUpRadio">
           <property name="text">
-           <string>Verify</string>
+           <string>Server Down</string>
           </property>
          </widget>
         </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
-         <widget class="QLineEdit" name="FileName"/>
-        </item>
-        <item>
-         <widget class="QPushButton" name="SelectFile">
+         <widget class="QRadioButton" name="ServerDownRadio">
           <property name="text">
-           <string>Select File </string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_5">
-        <item>
-         <widget class="QPushButton" name="pushButton_2">
-          <property name="text">
-           <string>Send </string>
+           <string>Serve Up</string>
           </property>
          </widget>
         </item>
@@ -76,7 +59,18 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
-         <widget class="QTextEdit" name="StatusDisplay"/>
+         <widget class="QTextEdit" name="Status"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="SaveFile">
+          <property name="text">
+           <string>Save</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </item>
