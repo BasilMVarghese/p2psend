@@ -20,66 +20,66 @@
 
 import Ice, IcePy
 
-# Start of module date
-_M_date = Ice.openModule('date')
-__name__ = 'date'
+# Start of module data
+_M_data = Ice.openModule('data')
+__name__ = 'data'
 
-if 'sendfile' not in _M_date.__dict__:
-    _M_date.sendfile = Ice.createTempClass()
+if 'sendfile' not in _M_data.__dict__:
+    _M_data.sendfile = Ice.createTempClass()
     class sendfile(Ice.Object):
         def __init__(self):
-            if Ice.getType(self) == _M_date.sendfile:
-                raise RuntimeError('date.sendfile is an abstract class')
+            if Ice.getType(self) == _M_data.sendfile:
+                raise RuntimeError('data.sendfile is an abstract class')
 
         def ice_ids(self, current=None):
-            return ('::Ice::Object', '::date::sendfile')
+            return ('::Ice::Object', '::data::sendfile')
 
         def ice_id(self, current=None):
-            return '::date::sendfile'
+            return '::data::sendfile'
 
         def ice_staticId():
-            return '::date::sendfile'
+            return '::data::sendfile'
         ice_staticId = staticmethod(ice_staticId)
 
         def sendImage(self, kind, file, current=None):
             pass
 
         def __str__(self):
-            return IcePy.stringify(self, _M_date._t_sendfile)
+            return IcePy.stringify(self, _M_data._t_sendfile)
 
         __repr__ = __str__
 
-    _M_date.sendfilePrx = Ice.createTempClass()
+    _M_data.sendfilePrx = Ice.createTempClass()
     class sendfilePrx(Ice.ObjectPrx):
 
         def sendImage(self, kind, file, _ctx=None):
-            return _M_date.sendfile._op_sendImage.invoke(self, ((kind, file), _ctx))
+            return _M_data.sendfile._op_sendImage.invoke(self, ((kind, file), _ctx))
 
         def begin_sendImage(self, kind, file, _response=None, _ex=None, _sent=None, _ctx=None):
-            return _M_date.sendfile._op_sendImage.begin(self, ((kind, file), _response, _ex, _sent, _ctx))
+            return _M_data.sendfile._op_sendImage.begin(self, ((kind, file), _response, _ex, _sent, _ctx))
 
         def end_sendImage(self, _r):
-            return _M_date.sendfile._op_sendImage.end(self, _r)
+            return _M_data.sendfile._op_sendImage.end(self, _r)
 
         def checkedCast(proxy, facetOrCtx=None, _ctx=None):
-            return _M_date.sendfilePrx.ice_checkedCast(proxy, '::date::sendfile', facetOrCtx, _ctx)
+            return _M_data.sendfilePrx.ice_checkedCast(proxy, '::data::sendfile', facetOrCtx, _ctx)
         checkedCast = staticmethod(checkedCast)
 
         def uncheckedCast(proxy, facet=None):
-            return _M_date.sendfilePrx.ice_uncheckedCast(proxy, facet)
+            return _M_data.sendfilePrx.ice_uncheckedCast(proxy, facet)
         uncheckedCast = staticmethod(uncheckedCast)
 
-    _M_date._t_sendfilePrx = IcePy.defineProxy('::date::sendfile', sendfilePrx)
+    _M_data._t_sendfilePrx = IcePy.defineProxy('::data::sendfile', sendfilePrx)
 
-    _M_date._t_sendfile = IcePy.defineClass('::date::sendfile', sendfile, -1, (), True, False, None, (), ())
-    sendfile._ice_type = _M_date._t_sendfile
+    _M_data._t_sendfile = IcePy.defineClass('::data::sendfile', sendfile, -1, (), True, False, None, (), ())
+    sendfile._ice_type = _M_data._t_sendfile
 
     sendfile._op_sendImage = IcePy.Operation('sendImage', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0), ((), IcePy._t_string, False, 0)), (), ((), IcePy._t_bool, False, 0), ())
 
-    _M_date.sendfile = sendfile
+    _M_data.sendfile = sendfile
     del sendfile
 
-    _M_date.sendfilePrx = sendfilePrx
+    _M_data.sendfilePrx = sendfilePrx
     del sendfilePrx
 
-# End of module date
+# End of module data
