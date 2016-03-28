@@ -8,6 +8,8 @@ class  window(Ui_MainWindow):# The Ui_Main Window is a model of userinterface wh
 		Ui_MainWindow.setupUi(self,QMainWindow)
 		self.SelectFileButton.clicked.connect(self.getFile)	
 		self.SetUserNameButton.clicked.connect(self.setUserName)
+		self.StatusDisplay.setTextColor(QtGui.QColor(255,0,0))
+		self.StatusDisplay.append("Welcome to p2psend")
 		#self.StatusDisplay.setAlignment(Qt.AlignLeft)
 		self.Configfilepath="config"
 	def getFile(self):
@@ -16,8 +18,9 @@ class  window(Ui_MainWindow):# The Ui_Main Window is a model of userinterface wh
 		self.filelist.append(filname)
 		self.FileName.setText(filname)
 	def setUserName(self): 
-		# This will get the username and will save it into a filename.
-		self.StatusDisplay.setText("UsernameSaved::"+str(self.UserName.text()))
+		# This will get the username and will save it into a filenameself.
+		self.StatusDisplay.setTextColor(QtGui.QColor(0,255,0))
+		self.StatusDisplay.append("UsernameSaved::"+str(self.UserName.text()))
 		
 		fil =open(self.Configfilepath,'w')
 		fil.write("Usename#"+str(self.UserName.text()))
