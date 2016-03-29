@@ -3,12 +3,12 @@ from Receiver_ui_demo import *
 sys.path.append("..")
 import data
 class sendfileI(data.sendfile):
-	def sendstringfile(self,data,filename):
+	def sendstringfile(self,data,filename,current=None):
 		self.ReceivedData=[]
 		self.ReceivedData.append(data)
 		self.ReceivedData.append(filename)
 		print "datareceived"
-		return True
+		
 class window(Ui_MainWindow):
 	def setupUi(self,QMainWindow):
 		Ui_MainWindow.setupUi(self,QMainWindow)
