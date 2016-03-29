@@ -74,7 +74,7 @@ if 'sendfile' not in _M_data.__dict__:
     _M_data._t_sendfile = IcePy.defineClass('::data::sendfile', sendfile, -1, (), True, False, None, (), ())
     sendfile._ice_type = _M_data._t_sendfile
 
-    sendfile._op_sendstringfile = IcePy.Operation('sendstringfile', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0), ((), IcePy._t_string, False, 0)), (), None, ())
+    sendfile._op_sendstringfile = IcePy.Operation('sendstringfile', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0), ((), IcePy._t_string, False, 0)), (), ((), IcePy._t_string, False, 0), ())
 
     _M_data.sendfile = sendfile
     del sendfile

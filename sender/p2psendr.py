@@ -12,6 +12,7 @@ class  window(Ui_MainWindow):# The Ui_Main Window is a model of userinterface wh
 		Ui_MainWindow.setupUi(self,QMainWindow)
 		self.SelectFileButton.clicked.connect(self.getFile)	
 		self.SetUserNameButton.clicked.connect(self.setUserName)
+		self.SendButton.clicked.connect(self.sendFile)
 		self.StatusDisplay.setTextColor(QtGui.QColor(255,0,0))
 		self.StatusDisplay.append("Welcome to p2psend")
 		#self.StatusDisplay.setAlignment(Qt.AlignLeft)
@@ -24,7 +25,6 @@ class  window(Ui_MainWindow):# The Ui_Main Window is a model of userinterface wh
 		    self.ac = Ice.initialize(sys.argv)
 		    self.base =self.ac.stringToProxy("SimplePrinter:default -p 10000")
 		    self.SendObject= data.sendfilePrx.checkedCast(self.base)
-		    self.SendObject.sendstringfile("hello","motherfuckers")
 		    if not self.SendObject:
 		        raise RuntimeError("Invalid proxy")
 	            
@@ -55,7 +55,9 @@ class  window(Ui_MainWindow):# The Ui_Main Window is a model of userinterface wh
 	def varifyBuddyName(self):
 		pass
 	def sendFile(self):
-		pass
+		file=open(self.filelist[-1],'r')
+		data=file.read()
+		self.SendObject.sendstringfile(str(data),"hello")
 
 
 
