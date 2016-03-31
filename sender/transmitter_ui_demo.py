@@ -82,7 +82,7 @@ class Ui_MainWindow(object):
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow", None))
+        MainWindow.setWindowTitle(_translate("P2PSEND Transmitter", "P2PSEND Transmitter", None))
         self.SetUserNameButton.setText(_translate("MainWindow", "Set User Name", None))
         self.VerfiyBuddyButton.setText(_translate("MainWindow", "Verify", None))
         self.SelectFileButton.setText(_translate("MainWindow", "Select File ", None))
