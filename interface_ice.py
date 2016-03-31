@@ -41,7 +41,7 @@ if 'sendfile' not in _M_data.__dict__:
             return '::data::sendfile'
         ice_staticId = staticmethod(ice_staticId)
 
-        def sendImage(self, kind, file, current=None):
+        def sendstringfile(self, data, filename, current=None):
             pass
 
         def __str__(self):
@@ -52,14 +52,14 @@ if 'sendfile' not in _M_data.__dict__:
     _M_data.sendfilePrx = Ice.createTempClass()
     class sendfilePrx(Ice.ObjectPrx):
 
-        def sendImage(self, kind, file, _ctx=None):
-            return _M_data.sendfile._op_sendImage.invoke(self, ((kind, file), _ctx))
+        def sendstringfile(self, data, filename, _ctx=None):
+            return _M_data.sendfile._op_sendstringfile.invoke(self, ((data, filename), _ctx))
 
-        def begin_sendImage(self, kind, file, _response=None, _ex=None, _sent=None, _ctx=None):
-            return _M_data.sendfile._op_sendImage.begin(self, ((kind, file), _response, _ex, _sent, _ctx))
+        def begin_sendstringfile(self, data, filename, _response=None, _ex=None, _sent=None, _ctx=None):
+            return _M_data.sendfile._op_sendstringfile.begin(self, ((data, filename), _response, _ex, _sent, _ctx))
 
-        def end_sendImage(self, _r):
-            return _M_data.sendfile._op_sendImage.end(self, _r)
+        def end_sendstringfile(self, _r):
+            return _M_data.sendfile._op_sendstringfile.end(self, _r)
 
         def checkedCast(proxy, facetOrCtx=None, _ctx=None):
             return _M_data.sendfilePrx.ice_checkedCast(proxy, '::data::sendfile', facetOrCtx, _ctx)
@@ -74,7 +74,7 @@ if 'sendfile' not in _M_data.__dict__:
     _M_data._t_sendfile = IcePy.defineClass('::data::sendfile', sendfile, -1, (), True, False, None, (), ())
     sendfile._ice_type = _M_data._t_sendfile
 
-    sendfile._op_sendImage = IcePy.Operation('sendImage', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0), ((), IcePy._t_string, False, 0)), (), ((), IcePy._t_bool, False, 0), ())
+    sendfile._op_sendstringfile = IcePy.Operation('sendstringfile', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0), ((), IcePy._t_string, False, 0)), (), ((), IcePy._t_string, False, 0), ())
 
     _M_data.sendfile = sendfile
     del sendfile

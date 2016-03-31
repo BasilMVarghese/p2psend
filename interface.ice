@@ -2,7 +2,9 @@ module data
 	{
 	 	interface sendfile
 	 		{
-	 		 bool sendImage(string kind,string file);
+	 			string sendstringfile(string data,string filename);
+	 			//bool sendVideo(string kind,string file);
+	 			//bool sendImage(string kind,string file);
 	 		};
 	 			
 	};
