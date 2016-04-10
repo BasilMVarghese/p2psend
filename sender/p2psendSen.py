@@ -1,4 +1,5 @@
 
+#! /usr/bin/python
 import sys
 from transmitter_ui_demo import *
 import sys, traceback, Ice

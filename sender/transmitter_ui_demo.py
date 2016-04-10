@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'transmitter_UI.ui'
 #
-# Created: Thu Mar 24 22:44:40 2016
+# Created: Sun Apr 10 17:42:51 2016
 #      by: PyQt4 UI code generator 4.10.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -26,7 +26,7 @@ except AttributeError:
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
-        MainWindow.resize(681, 231)
+        MainWindow.resize(681, 240)
         self.centralwidget = QtGui.QWidget(MainWindow)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.gridLayout = QtGui.QGridLayout(self.centralwidget)
@@ -44,9 +44,15 @@ class Ui_MainWindow(object):
         self.verticalLayout.addLayout(self.horizontalLayout_4)
         self.horizontalLayout_3 = QtGui.QHBoxLayout()
         self.horizontalLayout_3.setObjectName(_fromUtf8("horizontalLayout_3"))
+        self.label = QtGui.QLabel(self.centralwidget)
+        self.label.setObjectName(_fromUtf8("label"))
+        self.horizontalLayout_3.addWidget(self.label)
         self.BuddyIp = QtGui.QLineEdit(self.centralwidget)
         self.BuddyIp.setObjectName(_fromUtf8("BuddyIp"))
         self.horizontalLayout_3.addWidget(self.BuddyIp)
+        self.label_2 = QtGui.QLabel(self.centralwidget)
+        self.label_2.setObjectName(_fromUtf8("label_2"))
+        self.horizontalLayout_3.addWidget(self.label_2)
         self.BuddyName = QtGui.QLineEdit(self.centralwidget)
         self.BuddyName.setObjectName(_fromUtf8("BuddyName"))
         self.horizontalLayout_3.addWidget(self.BuddyName)
@@ -82,8 +88,10 @@ class Ui_MainWindow(object):
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(_translate("P2PSEND Transmitter", "P2PSEND Transmitter", None))
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow", None))
         self.SetUserNameButton.setText(_translate("MainWindow", "Set User Name", None))
+        self.label.setText(_translate("MainWindow", "Buddy Ip", None))
+        self.label_2.setText(_translate("MainWindow", "Buddy Name", None))
         self.VerfiyBuddyButton.setText(_translate("MainWindow", "Verify", None))
         self.SelectFileButton.setText(_translate("MainWindow", "Select File ", None))
         self.SendButton.setText(_translate("MainWindow", "Send ", None))

@@ -34,7 +34,21 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_3">
         <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Buddy Ip</string>
+          </property>
+         </widget>
+        </item>
+        <item>
          <widget class="QLineEdit" name="BuddyIp"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Buddy Name</string>
+          </property>
+         </widget>
         </item>
         <item>
          <widget class="QLineEdit" name="BuddyName"/>
